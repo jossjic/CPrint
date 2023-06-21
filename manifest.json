@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Huella de carbono",
+    "name": "CFPrint",
     "version": "2.0",
     "permissions": [
       "system.cpu"
