@@ -3,6 +3,7 @@ chrome.system.cpu.getInfo(function(info) {
     var cpuInfoElement = document.getElementById('cpu-info');
     var processors = info.processors;
     var totalUsage = 0;
+    const watsP = new Map([["", 1], ["dos", 2], ["tres", 3]]); 
   
     for (var i = 0; i < processors.length; i++) {
       var usage = processors[i].usage;

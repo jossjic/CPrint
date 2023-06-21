@@ -3,12 +3,21 @@ body {
     width: 400px;
     height: 100px;
     font-family: 'Arial', sans-serif;
+    border-color: #006600;
   }
+
+  body img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20%;
+  }	
   
   h1 {
     color: #006600;
     font-family: 'Arial', sans-serif;
-
+    display: block ;
   }
   
   pre {
