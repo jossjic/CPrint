@@ -16,9 +16,9 @@ chrome.system.cpu.getInfo(function(info) {
     var totalTimeInSeconds = totalUsage / 100000000; // Convertir a segundos
     var totalTimeInHours = totalTimeInSeconds / 3600; // Convertir a horas
     var huellaCarbono = (totalTimeInHours * num)/1000 * 0.5;
-    const mensaje = huellaCarbono > 0.8 ? "Consumo excesivo de energía, gestionar el uso del equipo (se recomienda suspender su uso)" 
+    const mensaje = huellaCarbono > 0.8 ? "Consumo excesivo de energía, gestionar el uso del equipo\n (se recomienda suspender su uso)" 
                     : huellaCarbono < 0.2 ? "Consumo bajo de energía, sin riesgos" 
-                    : "Consumo medio de energía, se recomienda ajustar la configuración de energía";
+                    : "Consumo medio de energía, se recomienda ajustar la \nconfiguración de energía";
 
     cpuInfoElement.textContent = "Procesador: " + modelName.toString() + 
     "\nTiempo de uso (horas): " + totalTimeInHours.toFixed(2).toString() +
