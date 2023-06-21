@@ -1,18 +1,19 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Huella de carbono",
-    "description": "Calcular huella de carbono del dispositivo",
-    "version": "1.1",
-    "icons": {
-    "128": "logo_128.png"
-    },
+    "version": "1.3",
     "permissions": [
-        "system.cpu",
-        "scripting",
-        "tabs",
-        "activeTab"
+      "system.cpu"
     ],
     "background": {
-        "service_worker": "back.js"
-    }
-}
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Información de la CPU"
+    },
+    "icons": {
+        "128": "logo_128.png"
+      }
+  }
