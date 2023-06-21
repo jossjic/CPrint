@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Huella de carbono",
-    "version": "1.4.1",
+    "version": "2.0",
     "permissions": [
       "system.cpu"
     ],
