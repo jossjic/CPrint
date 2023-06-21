@@ -4,7 +4,7 @@ chrome.system.cpu.getInfo(function(info) {
     var processors = info.processors;
     var modelName = info.modelName;
     var totalUsage = 0;
-    const watsP = new Map([["Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz", 45], ["AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx ", 35], ["AMD Ryzen 5 3450U with Radeon Vega Mobile Gfx ", 15]]); 
+    const watsP = new Map([["AMD Ryzen 5 3450U with Radeon Vega Mobile Gfx ", 45], ["AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx ", 35], ["AMD Ryzen 5 3450U with Radeon Vega Mobile Gfx ", 15]]); 
     const num = watsP.has(modelName) ? watsP.get(modelName) : 0;
 
     for (var i = 0; i < processors.length; i++) {
