@@ -1,0 +1,21 @@
+body {
+    background-color: #D1FFC2;
+    width: 400px;
+    height: 100px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    color: #006600;
+    font-family: 'Arial', sans-serif;
+
+  }
+  
+  pre {
+    background-color: #E8FFE3;
+    border: 2px solid #006600;
+    color: #006600;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    border-radius: 10px; /* Agrega bordes curvos al cuerpo del documento */
+  }
